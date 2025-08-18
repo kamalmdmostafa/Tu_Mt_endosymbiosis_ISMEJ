@@ -1,9 +1,0 @@
-Analysis Summary:
-----------------
-Total genes analyzed: 11521
-Up-regulated genes: 1388
-Down-regulated genes: 845
-FDR threshold: 0.050
-Log2FC threshold: 1.00
-TPM threshold: 0.005
-Sample percentage threshold: 0.75
