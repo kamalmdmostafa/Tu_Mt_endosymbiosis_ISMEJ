@@ -1,0 +1,27 @@
+ALGAE COUNT STATISTICAL ANALYSIS
+================================
+
+# A tibble: 3 × 7
+  Treatment     n  Mean    SD Median   Min   Max
+  <fct>     <int> <dbl> <dbl>  <dbl> <int> <int>
+1 Control      50  113.  29.5   108     47   172
+2 25µM         50  140.  36.2   146     72   191
+3 50µM         50  200.  63.5   198.    94   368
+
+             Df Sum Sq Mean Sq F value Pr(>F)    
+Treatment     2 197960   98980   47.82 <2e-16 ***
+Residuals   147 304243    2070                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Count ~ Treatment, data = data_long)
+
+$Treatment
+              diff       lwr       upr     p adj
+25µM-Control 26.60  5.056969  48.14303 0.0111202
+50µM-Control 86.84 65.296969 108.38303 0.0000000
+50µM-25µM    60.24 38.696969  81.78303 0.0000000
+
